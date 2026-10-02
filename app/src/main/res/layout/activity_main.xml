@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="Hello World"
+        android:textColor="@color/text_primary"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="name"
+        android:hint="@string/name_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:minHeight="56dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/helloButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="56dp"
+        android:text="@string/say_hello" />
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/default_message"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp" />
+</LinearLayout>
