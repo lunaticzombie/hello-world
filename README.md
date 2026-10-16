@@ -2,7 +2,7 @@
 
 This repository contains a minimal native Android app.
 The app asks the user for their name and shows a personalized greeting.
-If the user taps **Say hello** without entering a name, the input shows a clear validation error and the placeholder greeting remains visible.
+The **Say hello** button stays disabled until the user enters a non-empty name, including after trimming whitespace.
 
 ## Project structure
 
