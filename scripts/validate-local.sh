@@ -21,7 +21,9 @@ grep -q "@+id/nameInput" app/src/main/res/layout/activity_main.xml
 grep -q "@+id/helloButton" app/src/main/res/layout/activity_main.xml
 grep -q "@+id/greetingText" app/src/main/res/layout/activity_main.xml
 grep -q "Hello, " app/src/main/java/com/example/helloworld/MainActivity.java
-grep -q "setError" app/src/main/java/com/example/helloworld/MainActivity.java
-grep -q "empty_name_error" app/src/main/res/values/strings.xml
+grep -q "setEnabled(false)" app/src/main/java/com/example/helloworld/MainActivity.java
+grep -q "addTextChangedListener" app/src/main/java/com/example/helloworld/MainActivity.java
+grep -q "trim().isEmpty()" app/src/main/java/com/example/helloworld/MainActivity.java
+! grep -q "empty_name_error" app/src/main/java/com/example/helloworld/MainActivity.java app/src/main/res/values/strings.xml
 
 echo "Local project structure validation passed."
