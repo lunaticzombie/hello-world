@@ -25,11 +25,12 @@ The generated debug APK will be under `app/build/outputs/apk/debug/`.
 
 ## Local validation in this environment
 
-This environment does not currently have `gradle` or the Android SDK installed, so a full Android compile and emulator test could not be run here.
-The repository includes a local static validation script that checks the expected Android project files and the core greeting behavior markers:
+This environment has Gradle 8.10.2 and Android SDK API 35 installed.
+The Android debug build was verified successfully with `gradle :app:assembleDebug`.
+The repository also includes a local static validation script that checks the expected Android project files and the core greeting behavior markers:
 
 ```sh
 ./scripts/validate-local.sh
 ```
 
-Run the full Gradle build on a machine with the Android toolchain before distributing the APK.
+Run the Gradle build again after making changes before distributing the APK.
